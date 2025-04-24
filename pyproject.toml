@@ -2,7 +2,7 @@
 name = "bisom"
 version = "0.1.0"
 description = ""
-authors = ["romflorentz <romflorentz@gmail.com>"]
+authors = ["Romain Florentz <romain@florentz-consulting.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
