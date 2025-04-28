@@ -28,7 +28,7 @@ To be completed. Once more data is available, we'll extend the training and run 
 ## Installation
 This project uses [Poetry](https://python-poetry.org/), a modern tool for dependency management and packaging in Python. It helps ensure that all dependencies are locked and reproducible across machines.
 
-Make sure you are using Python 3.10. If you're unfamiliar with virtual environments, Poetry handles this for you automatically.
+Make sure you are using Python 3.11. If you're unfamiliar with virtual environments, Poetry handles this for you automatically.
 
 ### Steps
 

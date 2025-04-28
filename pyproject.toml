@@ -6,7 +6,7 @@ authors = ["Romain Florentz <romain@florentz-consulting.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.11"
 torchaudio = "^2.7.0"
 soundfile = "^0.13.1"
 torch = "^2.7.0"
