@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "bisom"
+name = "whisper-bisom"
 version = "0.1.0"
 description = ""
 authors = ["Romain Florentz <romain@florentz-consulting.com>"]

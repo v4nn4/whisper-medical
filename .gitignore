@@ -1,4 +1,7 @@
+.DS_Store
 .venv
+*.pyc
 models
-output
+metrics
 data/samples/m4a
+data/transcripts/predicted_transcripts_*
