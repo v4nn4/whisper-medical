@@ -18,8 +18,9 @@ Final training results (after 100 steps):
 | Word Error Rate (WER)     | 0.1033 |
 | Character Error Rate (CER)| 0.3946 |
 
-> **Note**: This proof-of-concept used a very small dataset (~5 minutes of audio) without a train/test split. Metrics were computed on the training set only.
+> **Note**: This proof-of-concept used a very small dataset without a train/test split. Metrics were computed on the training set only.
 
+The colab notebook used for fine-tuning can be found [here](https://colab.research.google.com/gist/v4nn4/195444fd959db1bef4e09cd08ee3a85d/whisper-bisom-fine-tuning-phase-1.ipynb).
 
 ### Advanced Fine-Tuning
 To be completed. Once more data is available, we'll extend the training and run proper evaluations on held-out data.
@@ -45,6 +46,13 @@ poetry install
 # Run a first test command (e.g., health check)
 poetry run python main.py health
 ```
+
+This project also depends on both:
+
+- [whisper](https://github.com/openai/whisper) (for conversion to GGML)
+- [whisper.cpp](https://github.com/ggerganov/whisper.cpp) (for lightweight CPU inference)
+
+You must clone those repositories locally and modify the respective paths in the `main.py` file.
 
 ## Usage
 All features are accessible from the command line using Python Fire.
