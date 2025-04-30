@@ -14,35 +14,35 @@ def whisper_full_transcribe(
     whisper_build_path: Path,
     input_dir: Path,
     output_dir: Path,
+    language: str = "fr",
+    beam_size: int = 5,
 ):
-    output_dir.parent.mkdir(parents=True, exist_ok=True)
+    output_dir.mkdir(parents=True, exist_ok=True)
     predicted_transcripts = {}
 
-    for i in range(1, 32):
-        wav_file = input_dir / f"New Recording {i}.wav"
-        if not wav_file.exists():
-            print(f"⚠️  File not found: {wav_file}")
-            continue
+    wav_files = sorted(input_dir.glob("*.wav"))
+    if not wav_files:
+        print(f"⚠️  No .wav files found in {input_dir}")
+        return
 
+    for wav_file in wav_files:
         result = subprocess.run(
             [
                 str(whisper_build_path.resolve()),
                 "-m",
                 str(model_path.resolve()),
                 "-l",
-                "fr",
+                language,
                 "-f",
                 str(wav_file.resolve()),
                 "-bs",
-                "5",
+                str(beam_size),
             ],
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
             encoding="utf-8",
-            errors="replace",  # replaces undecodable bytes instead of crashing
-            cwd=str(
-                Path(__file__).parent.parent.resolve()
-            ),  # root directory of the project
+            errors="replace",
+            cwd=str(Path(__file__).parent.parent.resolve()),
         )
 
         lines = [
@@ -59,7 +59,7 @@ def whisper_full_transcribe(
     with predicted_transcripts_path.open("w", encoding="utf-8") as f:
         json.dump(predicted_transcripts, f, indent=2, ensure_ascii=False)
 
-    print(f"✅ Transcriptions saved to {str(predicted_transcripts_path)}")
+    print(f"✅ Transcriptions saved to {predicted_transcripts_path}")
 
 
 def compute_metrics(
@@ -88,6 +88,8 @@ def compute_metrics(
         return text.strip()
 
     def extract_text(transcription_lines):
+        if isinstance(transcription_lines, str):
+            return transcription_lines.strip()
         return " ".join(
             re.sub(r"\[.*?\]", "", line).strip() for line in transcription_lines
         )

@@ -1,4 +1,4 @@
-# whisper-bisom
+# whisper-medical
 
 Fine-tuning of OpenAI's Whisper model on French audio, with a focus on medical use cases in urgent care.
 
@@ -20,7 +20,7 @@ Final training results (after 100 steps):
 
 > **Note**: This proof-of-concept used a very small dataset without a train/test split. Metrics were computed on the training set only.
 
-The colab notebook used for fine-tuning can be found [here](https://colab.research.google.com/gist/v4nn4/195444fd959db1bef4e09cd08ee3a85d/whisper-bisom-fine-tuning-phase-1.ipynb).
+The colab notebook used for fine-tuning can be found [here]().
 
 ### Advanced Fine-Tuning
 To be completed. Once more data is available, we'll extend the training and run proper evaluations on held-out data.
@@ -37,8 +37,8 @@ Make sure you are using Python 3.11. If you're unfamiliar with virtual environme
 curl -sSL https://install.python-poetry.org | python3 -
 
 # Clone the repository
-git clone https://github.com/.../whisper-bisom.git
-cd whisper-bisom
+git clone https://github.com/.../whisper-medical.git
+cd whisper-medical
 
 # Install dependencies
 poetry install

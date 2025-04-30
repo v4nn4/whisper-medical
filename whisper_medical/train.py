@@ -10,6 +10,82 @@ from transformers.models.whisper import (
 from transformers.training_args_seq2seq import Seq2SeqTrainingArguments
 from transformers.trainer_seq2seq import Seq2SeqTrainer
 from jiwer import wer, cer
+import random
+import torchaudio
+
+
+def augment_audio(waveform, sample_rate):
+    if random.random() < 0.5:
+        aug_type = random.choice(["speed", "pitch"])
+
+        if aug_type == "speed":
+            speed_factor = random.uniform(0.9, 1.1)
+            waveform, _ = torchaudio.sox_effects.apply_effects_tensor(
+                waveform,
+                sample_rate,
+                [["speed", str(speed_factor)], ["rate", str(sample_rate)]],
+            )
+
+        elif aug_type == "pitch":
+            n_steps = random.uniform(-2, 2)
+            waveform, _ = torchaudio.sox_effects.apply_effects_tensor(
+                waveform,
+                sample_rate,
+                [["pitch", str(n_steps * 100)], ["rate", str(sample_rate)]],
+            )
+
+    return waveform
+
+
+def augment_dataset(
+    input_dir: Path,
+    output_dir: Path,
+    reference_transcripts_path: Path,
+    output_transcripts_path: Path,
+    num_augmentations: int = 2,
+):
+    output_dir.mkdir(parents=True, exist_ok=True)
+    print(f"✅ Augmenting from {input_dir} -> {output_dir}")
+
+    # Load original transcripts
+    with reference_transcripts_path.open("r", encoding="utf-8") as f:
+        reference_transcripts = json.load(f)
+
+    new_transcripts = {}
+
+    wav_files = list(input_dir.glob("*.wav"))
+    print(f"Found {len(wav_files)} original audio files.")
+
+    for wav_file in wav_files:
+        filename = wav_file.name
+        sentence = reference_transcripts.get(filename)
+
+        if sentence is None:
+            print(f"⚠️ Warning: No transcript for {filename}, skipping.")
+            continue
+
+        # Save original clean file
+        original_output_path = output_dir / filename
+        waveform, sample_rate = torchaudio.load(str(wav_file))
+        torchaudio.save(str(original_output_path), waveform, sample_rate)
+        new_transcripts[filename] = sentence
+
+        # Create N augmentations
+        for aug_idx in range(num_augmentations):
+            augmented_waveform = augment_audio(waveform.clone(), sample_rate)
+            augmented_filename = f"{wav_file.stem}_aug{aug_idx}.wav"
+            augmented_path = output_dir / augmented_filename
+            torchaudio.save(str(augmented_path), augmented_waveform, sample_rate)
+
+            new_transcripts[augmented_filename] = sentence
+
+    # Save new transcripts
+    with output_transcripts_path.open("w", encoding="utf-8") as f:
+        json.dump(new_transcripts, f, indent=2, ensure_ascii=False)
+
+    print("✅ Done augmenting.")
+    print(f"✅ New transcripts saved to {output_transcripts_path}")
+    print(f"✅ Total files: {len(new_transcripts)}")
 
 
 def finetune_hf_model(

@@ -1,7 +1,10 @@
 .DS_Store
 .venv
+.env
 *.pyc
 models
 metrics
 data/samples/m4a
-data/transcripts/predicted_transcripts_*
+data/**/transcripts/predicted_transcripts_*
+serviceAccount.json
+notebooks/**/*.csv

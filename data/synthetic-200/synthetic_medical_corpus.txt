@@ -1,0 +1,200 @@
+Évaluation PEC, douleur thoracique.
+Traumatisme crânien, pas de perte de conscience.
+HTA, antécédents d'AVC.
+Complication post-opératoire, infection de la plaie.
+Évaluation DRA, pas d'amélioration.
+GSC 15, pas de signes neurologiques.
+Diagnostic : pneumonie.
+Asthme aigu, inhalateur inefficace.
+Fracture ouverte du bras.
+Trauma TDM négatif.
+Diagnostic : sepsis.
+Douleur abdominale, origine incertaine.
+Évaluation DSM, pas de signes de psychose.
+Insuffisance cardiaque congestive, œdème des membres inférieurs.
+Diagnostic : diabète.
+Symptômes de sevrage alcoolique.
+Plan de traitement : antibiotiques IV.
+Évaluation HD, stable.
+Blessure par balle, hémorragie interne.
+GCS 8, pupilles réactives.
+Évaluation SMUR, douleur thoracique.
+HTA, pas de signes de complication.
+Diagnostic : embolie pulmonaire.
+Symptômes de sevrage de drogues.
+Symptômes d'infarctus du myocarde.
+Évaluation PEC, condition stable.
+Fracture de la jambe, nécessite une intervention chirurgicale.
+Hémorragie gastro-intestinale, anémie.
+Trauma, fracture du bassin.
+Post-op, infection de la plaie.
+GCS 7, intubation nécessaire.
+Diagnostic : insuffisance rénale.
+Évaluation DRA, pas d'amélioration.
+Évaluation DSM, symptômes dépressifs.
+Antécédents d'AVC, pas de signes actuels.
+HTA, nécessite un ajustement de médication.
+Trauma, fracture de la clavicule.
+Évaluation HD, pas de signes d'instabilité.
+Diagnostic : pneumothorax.
+Asthme aigu, nécessite une hospitalisation.
+PEC SMUR, traumatisme crânien.
+Post-op, pas de complications.
+Symptômes de sevrage alcoolique, traitement requis.
+Évaluation DSM, symptômes d'anxiété.
+HTA, nécessite un suivi régulier.
+Diagnostic : pancreatitis aiguë.
+Évaluation DSM, pas de signes de trouble de l'humeur.
+GCS 14, pas de signes de trouble neurologique.
+Diagnostic : insuffisance cardiaque.
+Post-op, pas de signes d'infection.
+Complication post-opératoire, hémorragie.
+Diagnostic : embolie pulmonaire.
+Évaluation PEC, inquiétudes pour sepsis.
+Trauma, fracture du tibia.
+Évaluation SMUR, douleur abdominale.
+HTA, antécédents de maladie cardiaque.
+GCS 9, intubation nécessaire.
+Diagnostic : choc septique.
+Évaluation HD, pas de signes de DRA.
+Symptômes de sevrage de drogues, traitement requis.
+Diagnostic : pneumonie.
+Évaluation DSM, symptômes dépressifs.
+Antécédents d'AVC, pas de signes actuels.
+HTA, nécessite un ajustement de médication.
+Symptômes d'infarctus du myocarde, prise en charge immédiate.
+Évaluation PEC, condition stable.
+Fracture de la jambe, nécessite une intervention chirurgicale.
+Hémorragie gastro-intestinale, anémie.
+Trauma, fracture du bassin.
+Post-op, infection de la plaie.
+GCS 7, intubation nécessaire.
+Diagnostic : insuffisance rénale.
+Évaluation DRA, pas d'amélioration.
+Évaluation DSM, symptômes dépressifs.
+Antécédents d'AVC, pas de signes actuels.
+HTA, nécessite un ajustement de médication.
+Diagnostic : pancreatitis aiguë.
+Évaluation DSM, pas de signes de trouble de l'humeur.
+GCS 14, pas de signes de trouble neurologique.
+Diagnostic : insuffisance cardiaque.
+Post-op, pas de signes d'infection.
+Complication post-opératoire, hémorragie.
+Diagnostic : embolie pulmonaire.
+Évaluation PEC, inquiétudes pour sepsis.
+Trauma, fracture du tibia.
+Évaluation SMUR, douleur abdominale.
+HTA, antécédents de maladie cardiaque.
+GCS 9, intubation nécessaire.
+Diagnostic : choc septique.
+Évaluation HD, pas de signes de DRA.
+Symptômes de sevrage de drogues, traitement requis.
+Diagnostic : pneumonie.
+Évaluation DSM, symptômes d'anxiété.
+Antécédents d'AVC, pas de signes actuels.
+HTA, nécessite un ajustement de médication.
+Symptômes d'infarctus du myocarde, prise en charge immédiate.
+Évaluation PEC, condition stable.
+Fracture de la jambe, nécessite une intervention chirurgicale.
+Hémorragie gastro-intestinale, anémie.
+Trauma, fracture du bassin.
+Post-op, infection de la plaie.
+GCS 7, intubation nécessaire.
+Diagnostic : insuffisance rénale.
+Évaluation DRA, pas d'amélioration.
+Évaluation DSM, symptômes dépressifs.
+Antécédents d'AVC, pas de signes actuels.
+HTA, nécessite un ajustement de médication.
+Diagnostic : pancreatitis aiguë.
+Évaluation DSM, pas de signes de trouble de l'humeur.
+GCS 14, pas de signes de trouble neurologique.
+Diagnostic : insuffisance cardiaque.
+Post-op, pas de signes d'infection.
+Complication post-opératoire, hémorragie.
+Diagnostic : embolie pulmonaire.
+Évaluation PEC, inquiétudes pour sepsis.
+Trauma, fracture du tibia.
+Évaluation SMUR, douleur abdominale.
+HTA, antécédents de maladie cardiaque.
+GCS 9, intubation nécessaire.
+Diagnostic : choc septique.
+Évaluation HD, pas de signes de DRA.
+Symptômes de sevrage de drogues, traitement requis.
+Diagnostic : pneumonie.
+Évaluation DSM, symptômes d'anxiété.
+Antécédents d'AVC, pas de signes actuels.
+HTA, nécessite un ajustement de médication.
+Symptômes d'infarctus du myocarde, prise en charge immédiate.
+Évaluation PEC, condition stable.
+Fracture de la jambe, nécessite une intervention chirurgicale.
+Hémorragie gastro-intestinale, anémie.
+Trauma, fracture du bassin.
+Post-op, infection de la plaie.
+GCS 7, intubation nécessaire.
+Diagnostic : insuffisance rénale.
+Évaluation DRA, pas d'amélioration.
+Évaluation DSM, symptômes dépressifs.
+Antécédents d'AVC, pas de signes actuels.
+HTA, nécessite un ajustement de médication.
+Diagnostic : pancreatitis aiguë.
+Évaluation DSM, pas de signes de trouble de l'humeur.
+GCS 14, pas de signes de trouble neurologique.
+Diagnostic : insuffisance cardiaque.
+Post-op, pas de signes d'infection.
+Complication post-opératoire, hémorragie.
+Diagnostic : embolie pulmonaire.
+Évaluation PEC, inquiétudes pour sepsis.
+Trauma, fracture du tibia.
+Évaluation SMUR, douleur abdominale.
+HTA, antécédents de maladie cardiaque.
+GCS 9, intubation nécessaire.
+Diagnostic : choc septique.
+Évaluation HD, pas de signes de DRA.
+Symptômes de sevrage de drogues, traitement requis.
+Diagnostic : pneumonie.
+Évaluation DSM, symptômes d'anxiété.
+Antécédents d'AVC, pas de signes actuels.
+HTA, nécessite un ajustement de médication.
+Symptômes d'infarctus du myocarde, prise en charge immédiate.
+Évaluation PEC, condition stable.
+Fracture de la jambe, nécessite une intervention chirurgicale.
+Hémorragie gastro-intestinale, anémie.
+Trauma, fracture du bassin.
+Post-op, infection de la plaie.
+GCS 7, intubation nécessaire.
+Diagnostic : insuffisance rénale.
+Évaluation DRA, pas d'amélioration.
+Évaluation DSM, symptômes dépressifs.
+Antécédents d'AVC, pas de signes actuels.
+HTA, nécessite un ajustement de médication.
+Diagnostic : pancreatitis aiguë.
+Évaluation DSM, pas de signes de trouble de l'humeur.
+GCS 14, pas de signes de trouble neurologique.
+Diagnostic : insuffisance cardiaque.
+Post-op, pas de signes d'infection.
+Complication post-opératoire, hémorragie.
+Diagnostic : embolie pulmonaire.
+Évaluation PEC, inquiétudes pour sepsis.
+Trauma, fracture du tibia.
+Évaluation SMUR, douleur abdominale.
+HTA, antécédents de maladie cardiaque.
+GCS 9, intubation nécessaire.
+Diagnostic : choc septique.
+Évaluation HD, pas de signes de DRA.
+Symptômes de sevrage de drogues, traitement requis.
+Diagnostic : pneumonie.
+Évaluation DSM, symptômes d'anxiété.
+Antécédents d'AVC, pas de signes actuels.
+HTA, nécessite un ajustement de médication.
+Symptômes d'infarctus du myocarde, prise en charge immédiate.
+Évaluation PEC, condition stable.
+Fracture de la jambe, nécessite une intervention chirurgicale.
+Hémorragie gastro-intestinale, anémie.
+Trauma, fracture du bassin.
+Post-op, infection de la plaie.
+GCS 7, intubation nécessaire.
+Diagnostic : insuffisance rénale.
+Évaluation DRA, pas d'amélioration.
+Évaluation DSM, symptômes dépressifs.
+Antécédents d'AVC, pas de signes actuels.
+HTA, nécessite un ajustement de médication.

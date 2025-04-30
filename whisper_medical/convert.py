@@ -14,7 +14,7 @@ def convert_pytorch_to_ggml(
             "poetry",
             "run",
             "python",
-            "whisper_bisom/convert-h5-to-ggml.py",  # convert a Hugging Face fine-tuned model (not OpenAI .pt) to GGML format
+            "whisper_medical/convert-h5-to-ggml.py",  # convert a Hugging Face fine-tuned model (not OpenAI .pt) to GGML format
             str(model_dir.resolve()),
             str(openai_whisper_path.resolve()),
             str(output_dir.resolve()),
